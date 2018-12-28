@@ -260,3 +260,7 @@ paket-files/
 __pycache__/
 *.pyc
 *.pyproj
+migrations
+py[cod]
+logs/log*
+.vs
