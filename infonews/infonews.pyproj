@@ -21,16 +21,23 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="info\constants.py" />
-    <Compile Include="info\home\views.py" />
-    <Compile Include="info\home\__init__.py" />
-    <Compile Include="info\models.py" />
+    <Compile Include="config.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="info\modules\home\views.py" />
+    <Compile Include="info\modules\home\__init__.py" />
+    <Compile Include="info\utils\common.py" />
+    <Compile Include="info\utils\constants.py" />
+    <Compile Include="info\utils\models.py" />
+    <Compile Include="info\utils\response_code.py" />
+    <Compile Include="info\utils\__init__.py" />
     <Compile Include="info\__init__.py" />
     <Compile Include="main.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="info\" />
-    <Folder Include="info\home\" />
+    <Folder Include="info\modules\home\" />
+    <Folder Include="info\modules\" />
     <Folder Include="info\static\" />
     <Folder Include="info\static\news\" />
     <Folder Include="info\static\news\css\" />
@@ -103,6 +110,7 @@
     <Folder Include="info\static\news\tinymce\js\tinymce\themes\mobile\" />
     <Folder Include="info\static\news\tinymce\js\tinymce\themes\modern\" />
     <Folder Include="info\templates\" />
+    <Folder Include="info\utils\" />
     <Folder Include="logs\" />
   </ItemGroup>
   <ItemGroup>
